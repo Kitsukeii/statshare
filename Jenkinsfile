@@ -9,12 +9,12 @@ pipeline {
         }
       stage('Create DB') {
             steps {
-                sh 'echo -e "Create\nTest\nPythontest\n5\nExit"|python3 statshare.py'
+                bash 'echo -e "Create\nTest\nPythontest\n5\nExit"|python3 statshare.py'
             }
         }
       stage('Test DB') {
             steps {
-                sh 'echo -e "Read\nExit"|python3 statshare.py'
+                bash 'echo -e "Read\nExit"|python3 statshare.py'
             }
         }
     }
