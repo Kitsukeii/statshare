@@ -17,3 +17,6 @@ pipeline {
                 sh 'echo -e "Read /n Exit"|python3 statshare.py'
             }
         }
+    }
+
+}
